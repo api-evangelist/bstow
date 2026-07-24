@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of the provider base host (cheerfulgiving.com redirects to goodworldnow.com)
+host: https://goodworldnow.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known discovery documents are published. The Bstow / Cheerful Giving product
+  now operates under the Goodworld platform (goodworldnow.com). A sales-gated developer
+  portal exists at https://developer.goodworldnow.com (200, login only) and api.goodworldnow.com
+  returns 403; no public OpenAPI/Swagger, security.txt, or OIDC/OAuth metadata was found.

@@ -1,7 +1,27 @@
 aid: bstow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bstow.png
 name: Bstow
-description: Bstow is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bstow is a fintech-for-good startup whose flagship product, Cheerful Giving, lets nonprofits
+  and their supporters raise money through spare-change round-up donations, recurring gifts, and
+  branded campaign pages. Backed by 500 Global, Bstow's Cheerful Giving product now operates as
+  part of the Goodworld social-impact platform (goodworldnow.com), which layers on giving forms,
+  events, peer-to-peer and workplace/payroll giving, text engagement, and an impact CRM. The
+  platform documents webhooks and partner integrations (Salesforce, Stripe, PayPal, Klaviyo,
+  Zapier, Fundraise Up) but does not publish a public, self-serve API reference or OpenAPI
+  specification; API access is arranged directly with the vendor through a sales-gated developer
+  portal. This profile was surfaced from the 500 Global portfolio and enriched by the pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/bstow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Nonprofit
+- Fundraising
+- Donations
+- Charitable Giving
+- Social Impact
+- Fintech
+- Payments
+- Round-Up Donations
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,32 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bstow-domain-security.yml
+- type: WellKnown
+  url: well-known/bstow-well-known.yml
 - type: Website
   url: https://cheerfulgiving.com
+- type: DeveloperPortal
+  url: https://developer.goodworldnow.com
+- type: HelpCenter
+  url: https://launch.goodworldnow.com/en/
+- type: Support
+  url: https://goodworldnow.com/contact
+- type: Blog
+  url: https://goodworldnow.com/articles
+- type: Pricing
+  url: https://goodworldnow.com/pricing
+- type: SignUp
+  url: https://app.cheerfulgiving.com/login
+- type: TermsOfService
+  url: https://goodworldnow.com/terms
+- type: PrivacyPolicy
+  url: https://goodworldnow.com/privacy
+- type: Webhooks
+  url: https://goodworldnow.com/integrations
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
